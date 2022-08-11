@@ -38,7 +38,7 @@ public class Lec02GetMultiResponseTest extends BaseTest {
                 .doOnNext(System.out::println);
 
         StepVerifier.create(responseFlux)
-                .expectNextCount(100)
+                .expectNextCount(10)
                 .verifyComplete();
 
     }
